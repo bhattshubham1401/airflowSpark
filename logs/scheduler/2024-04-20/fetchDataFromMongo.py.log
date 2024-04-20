@@ -4334,3 +4334,83 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'matplotlib'
 [2024-04-20T09:03:26.867+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fetchDataFromMongo.py
 [2024-04-20T09:03:26.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 0.044 seconds
+[2024-04-20T09:03:57.071+0000] {processor.py:161} INFO - Started process (PID=2195) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:03:57.072+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-04-20T09:03:57.074+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:03:57.074+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:03:57.091+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:03:57.087+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/fetchDataFromMongo.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetchDataFromMongo.py", line 7, in <module>
+    from transformation import initiate_data_transformation
+  File "/opt/airflow/dags/transformation.py", line 8, in <module>
+    from matplotlib import pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-20T09:03:57.093+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:03:57.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 0.043 seconds
+[2024-04-20T09:04:27.309+0000] {processor.py:161} INFO - Started process (PID=2202) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:04:27.310+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-04-20T09:04:27.312+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:04:27.311+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:04:27.329+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:04:27.326+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/fetchDataFromMongo.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetchDataFromMongo.py", line 7, in <module>
+    from transformation import initiate_data_transformation
+  File "/opt/airflow/dags/transformation.py", line 8, in <module>
+    from matplotlib import pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-20T09:04:27.331+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:04:27.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 0.044 seconds
+[2024-04-20T09:04:57.555+0000] {processor.py:161} INFO - Started process (PID=2209) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:04:57.555+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-04-20T09:04:57.557+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:04:57.557+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:04:57.572+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:04:57.568+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/fetchDataFromMongo.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetchDataFromMongo.py", line 7, in <module>
+    from transformation import initiate_data_transformation
+  File "/opt/airflow/dags/transformation.py", line 8, in <module>
+    from matplotlib import pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-20T09:04:57.573+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:04:57.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 0.041 seconds
+[2024-04-20T09:05:27.815+0000] {processor.py:161} INFO - Started process (PID=2216) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:05:27.816+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-04-20T09:05:27.819+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:05:27.818+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:05:27.848+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:05:27.839+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/fetchDataFromMongo.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetchDataFromMongo.py", line 7, in <module>
+    from transformation import initiate_data_transformation
+  File "/opt/airflow/dags/transformation.py", line 8, in <module>
+    from matplotlib import pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-20T09:05:27.849+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:05:27.870+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 0.061 seconds
+[2024-04-20T09:05:58.142+0000] {processor.py:161} INFO - Started process (PID=2223) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:05:58.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-04-20T09:05:58.145+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:05:58.144+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:05:58.160+0000] {logging_mixin.py:188} INFO - [2024-04-20T09:05:58.155+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/fetchDataFromMongo.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/fetchDataFromMongo.py", line 7, in <module>
+    from transformation import initiate_data_transformation
+  File "/opt/airflow/dags/transformation.py", line 8, in <module>
+    from matplotlib import pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+[2024-04-20T09:05:58.161+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-04-20T09:05:58.179+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 0.042 seconds
