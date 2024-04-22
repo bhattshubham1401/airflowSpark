@@ -4,14 +4,15 @@ from airflow.models import DAG
 from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from airflow.utils.task_group import TaskGroup
+# from transformation import initiate_data_transformation
 
 from utils.mongodbHelper import get_circle_data, get_sensor_data, get_process_sensor
 
 default_args = {
     'owner': 'Shubham Bhatt',
     'start_date': datetime(2024, 4, 11),
-    'retries': 3,
-    'retry_delay': timedelta(seconds=120)
+    'retries': 3
+    # 'retry_delay': timedelta(seconds=120)
 }
 
 with DAG(
@@ -43,7 +44,11 @@ with DAG(
                         op_args=[circle_id, sensor_id]
                     )
                     circle_task >> sensor_task
-
+    # transformation = PythonOperator(
+    #     task_id=f"TransformationSensorID_{sensor_id}",
+    #     python_callable=initiate_data_transformation,
+    #     op_args=[circle_id, sensor_id]
+    # )
     task5 = EmptyOperator(task_id="END")
 
-    Start >> circleGrp >> task5
+    Start >> circleGrp  >> task5
