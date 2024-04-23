@@ -11,12 +11,12 @@ from utils.mongodbHelper import get_circle_data, get_sensor_data, get_process_se
 default_args = {
     'owner': 'Shubham Bhatt',
     'start_date': datetime(2024, 4, 11),
-    'retries': 3
-    # 'retry_delay': timedelta(seconds=120)
+    'retries': 3,
+    'retry_delay': timedelta(seconds=120)
 }
 
 with DAG(
-        dag_id="ETL",
+        dag_id="ETL1",
         default_args=default_args,
         start_date=datetime(2024, 4, 11),
         schedule_interval=None,
@@ -51,4 +51,4 @@ with DAG(
     # )
     task5 = EmptyOperator(task_id="END")
 
-    Start >> circleGrp  >> task5
+    Start >> circleGrp >> task5

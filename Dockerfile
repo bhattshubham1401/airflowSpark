@@ -3,3 +3,4 @@ COPY requirements.txt /requirements.txt
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r /requirements.txt
 RUN pip install apache-airflow apache-airflow-providers-apache-spark pyspark
+RUN pip install apache-airflow-providers-mongo
