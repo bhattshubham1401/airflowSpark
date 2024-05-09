@@ -1,0 +1,768 @@
+[2024-05-08T13:15:10.766+0000] {processor.py:161} INFO - Started process (PID=8472) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:15:10.767+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:15:10.769+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:15:10.768+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:15:11.393+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:15:11.393+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:15:13.845+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:15:13.879+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:15:13.879+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:15:13.897+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:15:13.896+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:15:13.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.170 seconds
+[2024-05-08T13:15:44.130+0000] {processor.py:161} INFO - Started process (PID=8505) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:15:44.149+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:15:44.152+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:15:44.151+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:15:45.370+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:15:45.369+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:15:51.725+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:15:51.761+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:15:51.761+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:15:51.781+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:15:51.780+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:15:51.811+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 7.698 seconds
+[2024-05-08T13:16:21.931+0000] {processor.py:161} INFO - Started process (PID=8531) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:16:21.933+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:16:21.935+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:16:21.934+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:16:23.082+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:16:23.081+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:16:25.689+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:16:25.719+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:16:25.719+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:16:25.735+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:16:25.734+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:16:25.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.854 seconds
+[2024-05-08T13:16:55.995+0000] {processor.py:161} INFO - Started process (PID=8557) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:16:55.996+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:16:55.997+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:16:55.996+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:16:56.495+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:16:56.495+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:16:58.757+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:16:58.776+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:16:58.776+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:16:58.786+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:16:58.786+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:16:58.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.816 seconds
+[2024-05-08T13:17:29.040+0000] {processor.py:161} INFO - Started process (PID=8583) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:17:29.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:17:29.042+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:17:29.042+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:17:29.704+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:17:29.703+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:17:32.209+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:17:32.237+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:17:32.237+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:17:32.249+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:17:32.248+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:17:32.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.238 seconds
+[2024-05-08T13:18:02.507+0000] {processor.py:161} INFO - Started process (PID=8609) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:18:02.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:18:02.509+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:18:02.509+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:18:03.000+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:18:03.000+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:18:05.325+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:18:05.343+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:18:05.343+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:18:05.352+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:18:05.352+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:18:05.371+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.869 seconds
+[2024-05-08T13:18:35.572+0000] {processor.py:161} INFO - Started process (PID=8635) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:18:35.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:18:35.574+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:18:35.573+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:18:36.045+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:18:36.044+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:18:38.495+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:18:38.514+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:18:38.514+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:18:38.523+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:18:38.523+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:18:38.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.973 seconds
+[2024-05-08T13:19:08.824+0000] {processor.py:161} INFO - Started process (PID=8661) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:19:08.825+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:19:08.826+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:19:08.826+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:19:09.304+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:19:09.303+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:19:11.673+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:19:11.692+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:19:11.692+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:19:11.701+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:19:11.701+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:19:11.718+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.899 seconds
+[2024-05-08T13:19:42.018+0000] {processor.py:161} INFO - Started process (PID=8693) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:19:42.019+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:19:42.020+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:19:42.020+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:19:42.521+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:19:42.521+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:19:45.195+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:19:45.213+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:19:45.213+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:19:45.223+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:19:45.223+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:19:45.242+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.229 seconds
+[2024-05-08T13:20:15.331+0000] {processor.py:161} INFO - Started process (PID=8719) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:20:15.332+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:20:15.334+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:20:15.333+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:20:15.806+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:20:15.806+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:20:18.375+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:20:18.397+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:20:18.397+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:20:18.406+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:20:18.406+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:20:18.422+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.096 seconds
+[2024-05-08T13:20:48.602+0000] {processor.py:161} INFO - Started process (PID=8745) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:20:48.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:20:48.604+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:20:48.603+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:20:49.066+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:20:49.065+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:20:51.428+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:20:51.448+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:20:51.448+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:20:51.458+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:20:51.457+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:20:51.477+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.880 seconds
+[2024-05-08T13:21:21.724+0000] {processor.py:161} INFO - Started process (PID=8771) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:21:21.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:21:21.727+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:21:21.727+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:21:22.249+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:21:22.248+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:21:24.470+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:21:24.490+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:21:24.489+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:21:24.498+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:21:24.498+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:21:24.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.798 seconds
+[2024-05-08T13:21:54.859+0000] {processor.py:161} INFO - Started process (PID=8797) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:21:54.860+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:21:54.861+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:21:54.861+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:21:55.339+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:21:55.339+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:21:57.865+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:21:57.885+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:21:57.885+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:21:57.894+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:21:57.894+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:21:57.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.060 seconds
+[2024-05-08T13:22:28.140+0000] {processor.py:161} INFO - Started process (PID=8830) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:22:28.141+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:22:28.142+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:22:28.142+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:22:28.736+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:22:28.735+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:22:36.805+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:22:36.828+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:22:36.828+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:22:36.844+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:22:36.844+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:22:36.862+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 8.731 seconds
+[2024-05-08T13:23:07.054+0000] {processor.py:161} INFO - Started process (PID=8856) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:23:07.055+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:23:07.056+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:23:07.056+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:23:07.541+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:23:07.541+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:23:10.314+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:23:10.338+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:23:10.338+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:23:10.349+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:23:10.349+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:23:10.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.318 seconds
+[2024-05-08T13:23:40.579+0000] {processor.py:161} INFO - Started process (PID=8882) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:23:40.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:23:40.583+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:23:40.582+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:23:41.107+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:23:41.106+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:23:43.541+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:23:43.562+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:23:43.562+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:23:43.573+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:23:43.572+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:23:43.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.022 seconds
+[2024-05-08T13:24:13.790+0000] {processor.py:161} INFO - Started process (PID=8914) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:24:13.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:24:13.792+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:24:13.792+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:24:14.301+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:24:14.300+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:24:16.499+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:24:16.518+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:24:16.518+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:24:16.527+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:24:16.527+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:24:16.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.761 seconds
+[2024-05-08T13:24:46.821+0000] {processor.py:161} INFO - Started process (PID=8941) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:24:46.822+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:24:46.823+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:24:46.823+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:24:47.301+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:24:47.301+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:24:49.638+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:24:49.658+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:24:49.658+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:24:49.668+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:24:49.667+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:24:49.687+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.870 seconds
+[2024-05-08T13:25:19.947+0000] {processor.py:161} INFO - Started process (PID=8967) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:25:19.948+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:25:19.949+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:25:19.948+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:25:20.416+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:25:20.416+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:25:22.829+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:25:22.850+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:25:22.849+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:25:22.860+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:25:22.859+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:25:22.880+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.938 seconds
+[2024-05-08T13:25:53.174+0000] {processor.py:161} INFO - Started process (PID=8994) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:25:53.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:25:53.177+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:25:53.177+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:25:53.639+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:25:53.639+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:25:55.955+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:25:55.977+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:25:55.977+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:25:55.986+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:25:55.986+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:25:56.005+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.835 seconds
+[2024-05-08T13:26:26.264+0000] {processor.py:161} INFO - Started process (PID=9020) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:26:26.264+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:26:26.265+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:26:26.265+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:26:26.759+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:26:26.758+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:26:29.029+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:26:29.047+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:26:29.047+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:26:29.056+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:26:29.056+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:26:29.074+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.816 seconds
+[2024-05-08T13:26:59.300+0000] {processor.py:161} INFO - Started process (PID=9045) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:26:59.301+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:26:59.302+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:26:59.302+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:26:59.787+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:26:59.786+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:27:02.195+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:27:02.218+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:27:02.218+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:27:02.229+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:27:02.229+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:27:02.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.957 seconds
+[2024-05-08T13:27:32.314+0000] {processor.py:161} INFO - Started process (PID=9078) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:27:32.319+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:27:32.322+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:27:32.322+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:27:33.311+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:27:33.311+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:27:43.610+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:27:43.634+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:27:43.634+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:27:43.662+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:27:43.662+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:27:43.690+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 11.382 seconds
+[2024-05-08T13:28:13.858+0000] {processor.py:161} INFO - Started process (PID=9110) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:28:13.859+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:28:13.860+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:28:13.860+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:28:14.404+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:28:14.403+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:28:27.014+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:28:27.039+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:28:27.039+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:28:27.051+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:28:27.051+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:28:27.071+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 13.219 seconds
+[2024-05-08T13:28:57.275+0000] {processor.py:161} INFO - Started process (PID=9137) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:28:57.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:28:57.277+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:28:57.276+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:28:57.934+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:28:57.933+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:29:00.138+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:29:00.159+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:29:00.159+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:29:00.169+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:29:00.168+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:29:00.188+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.919 seconds
+[2024-05-08T13:29:30.432+0000] {processor.py:161} INFO - Started process (PID=9163) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:29:30.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:29:30.434+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:29:30.434+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:29:30.904+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:29:30.903+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:29:33.242+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:29:33.262+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:29:33.262+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:29:33.271+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:29:33.271+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:29:33.289+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.863 seconds
+[2024-05-08T13:30:03.564+0000] {processor.py:161} INFO - Started process (PID=9189) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:30:03.565+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:30:03.566+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:30:03.566+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:30:04.081+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:30:04.080+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:30:06.645+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:30:06.673+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:30:06.673+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:30:06.683+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:30:06.683+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:30:06.702+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.144 seconds
+[2024-05-08T13:30:36.922+0000] {processor.py:161} INFO - Started process (PID=9215) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:30:36.923+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:30:36.924+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:30:36.924+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:30:37.395+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:30:37.395+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:30:39.696+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:30:39.726+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:30:39.725+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:30:39.741+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:30:39.740+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:30:39.759+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.841 seconds
+[2024-05-08T13:31:10.019+0000] {processor.py:161} INFO - Started process (PID=9248) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:31:10.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:31:10.022+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:31:10.021+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:31:10.521+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:31:10.521+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:31:14.189+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:31:14.208+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:31:14.207+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:31:14.219+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:31:14.218+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:31:14.235+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 4.226 seconds
+[2024-05-08T13:31:44.409+0000] {processor.py:161} INFO - Started process (PID=9280) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:31:44.410+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:31:44.412+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:31:44.411+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:31:45.364+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:31:45.364+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:31:52.178+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:31:52.214+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:31:52.214+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:31:52.230+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:31:52.230+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:31:52.253+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 7.855 seconds
+[2024-05-08T13:32:22.492+0000] {processor.py:161} INFO - Started process (PID=9306) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:32:22.493+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:32:22.494+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:32:22.494+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:32:22.969+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:32:22.969+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:32:25.529+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:32:25.548+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:32:25.548+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:32:25.559+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:32:25.559+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:32:25.580+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.093 seconds
+[2024-05-08T13:32:55.788+0000] {processor.py:161} INFO - Started process (PID=9332) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:32:55.789+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:32:55.790+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:32:55.790+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:32:56.263+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:32:56.263+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:32:58.582+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:32:58.602+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:32:58.602+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:32:58.611+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:32:58.611+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:32:58.630+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.847 seconds
+[2024-05-08T13:33:28.930+0000] {processor.py:161} INFO - Started process (PID=9358) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:33:28.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:33:28.932+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:33:28.932+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:33:29.419+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:33:29.418+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:33:31.829+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:33:31.851+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:33:31.851+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:33:31.862+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:33:31.862+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:33:31.883+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.957 seconds
+[2024-05-08T13:34:02.167+0000] {processor.py:161} INFO - Started process (PID=9384) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:34:02.168+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:34:02.169+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:34:02.169+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:34:02.718+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:34:02.717+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:34:04.954+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:34:04.973+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:34:04.972+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:34:04.983+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:34:04.982+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:34:05.001+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.840 seconds
+[2024-05-08T13:34:35.276+0000] {processor.py:161} INFO - Started process (PID=9410) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:34:35.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:34:35.278+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:34:35.278+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:34:35.746+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:34:35.746+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:34:38.123+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:34:38.142+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:34:38.142+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:34:38.152+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:34:38.152+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:34:38.173+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.902 seconds
+[2024-05-08T13:35:08.437+0000] {processor.py:161} INFO - Started process (PID=9436) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:35:08.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:35:08.439+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:35:08.439+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:35:08.947+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:35:08.947+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:35:11.094+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:35:11.113+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:35:11.113+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:35:11.122+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:35:11.122+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:35:11.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.709 seconds
+[2024-05-08T13:35:41.471+0000] {processor.py:161} INFO - Started process (PID=9462) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:35:41.472+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:35:41.473+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:35:41.473+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:35:41.991+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:35:41.991+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:35:44.441+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:35:44.473+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:35:44.473+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:35:44.487+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:35:44.487+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:35:44.507+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.042 seconds
+[2024-05-08T13:36:14.704+0000] {processor.py:161} INFO - Started process (PID=9495) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:36:14.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:36:14.706+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:36:14.705+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:36:15.214+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:36:15.214+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:36:17.682+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:36:17.704+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:36:17.704+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:36:17.714+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:36:17.713+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:36:17.732+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.035 seconds
+[2024-05-08T13:36:47.939+0000] {processor.py:161} INFO - Started process (PID=9521) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:36:47.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:36:47.940+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:36:47.940+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:36:48.417+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:36:48.416+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:36:51.039+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:36:51.058+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:36:51.058+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:36:51.067+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:36:51.066+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:36:51.087+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.153 seconds
+[2024-05-08T13:37:21.616+0000] {processor.py:161} INFO - Started process (PID=9547) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:37:21.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:37:21.619+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:37:21.618+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:37:22.156+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:37:22.156+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:37:24.471+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:37:24.493+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:37:24.493+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:37:24.505+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:37:24.505+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:37:24.526+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.916 seconds
+[2024-05-08T13:37:54.906+0000] {processor.py:161} INFO - Started process (PID=9580) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:37:54.907+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:37:54.909+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:37:54.909+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:37:55.589+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:37:55.588+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:38:01.588+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:38:01.614+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:38:01.613+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:38:01.624+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:38:01.624+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:38:01.642+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 6.744 seconds
+[2024-05-08T13:38:31.887+0000] {processor.py:161} INFO - Started process (PID=9606) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:38:31.888+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:38:31.889+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:38:31.889+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:38:32.367+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:38:32.366+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:38:34.857+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:38:34.876+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:38:34.876+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:38:34.885+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:38:34.885+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:38:34.905+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.026 seconds
+[2024-05-08T13:39:05.140+0000] {processor.py:161} INFO - Started process (PID=9632) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:39:05.141+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:39:05.142+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:39:05.142+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:39:05.609+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:39:05.608+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:39:08.132+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:39:08.152+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:39:08.152+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:39:08.161+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:39:08.161+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:39:08.180+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.044 seconds
+[2024-05-08T13:39:38.476+0000] {processor.py:161} INFO - Started process (PID=9658) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:39:38.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:39:38.477+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:39:38.477+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:39:38.947+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:39:38.947+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:39:41.544+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:39:41.565+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:39:41.564+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:39:41.575+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:39:41.575+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:39:41.601+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.130 seconds
+[2024-05-08T13:40:11.791+0000] {processor.py:161} INFO - Started process (PID=9684) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:40:11.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:40:11.793+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:40:11.793+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:40:12.267+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:40:12.267+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:40:14.643+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:40:14.664+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:40:14.664+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:40:14.675+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:40:14.674+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:40:14.691+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.905 seconds
+[2024-05-08T13:40:44.949+0000] {processor.py:161} INFO - Started process (PID=9716) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:40:44.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:40:44.951+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:40:44.950+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:40:45.472+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:40:45.472+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:40:48.012+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:40:48.034+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:40:48.034+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:40:48.045+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:40:48.044+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:40:48.061+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.117 seconds
+[2024-05-08T13:41:18.267+0000] {processor.py:161} INFO - Started process (PID=9742) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:41:18.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:41:18.269+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:41:18.269+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:41:18.763+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:41:18.762+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:41:21.209+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:41:21.230+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:41:21.229+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:41:21.239+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:41:21.239+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:41:21.259+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.997 seconds
+[2024-05-08T13:41:51.597+0000] {processor.py:161} INFO - Started process (PID=9768) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:41:51.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:41:51.599+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:41:51.598+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:41:52.065+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:41:52.064+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:41:54.389+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:41:54.409+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:41:54.409+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:41:54.419+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:41:54.419+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:41:54.438+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.847 seconds
+[2024-05-08T13:42:24.688+0000] {processor.py:161} INFO - Started process (PID=9794) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:42:24.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:42:24.690+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:42:24.690+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:42:25.179+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:42:25.179+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:42:27.485+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:42:27.506+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:42:27.506+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:42:27.518+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:42:27.518+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:42:27.540+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.857 seconds
+[2024-05-08T13:42:57.806+0000] {processor.py:161} INFO - Started process (PID=9820) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:42:57.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:42:57.808+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:42:57.808+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:42:58.293+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:42:58.292+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:43:00.874+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:43:00.895+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:43:00.895+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:43:00.908+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:43:00.907+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:43:00.928+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.129 seconds
+[2024-05-08T13:43:31.044+0000] {processor.py:161} INFO - Started process (PID=9846) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:43:31.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:43:31.047+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:43:31.046+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:43:31.704+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:43:31.704+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:43:34.021+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:43:34.050+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:43:34.050+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:43:34.062+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:43:34.061+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:43:34.082+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.045 seconds
+[2024-05-08T13:44:04.292+0000] {processor.py:161} INFO - Started process (PID=9872) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:44:04.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:44:04.294+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:44:04.293+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:44:04.760+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:44:04.759+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:44:07.335+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:44:07.355+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:44:07.355+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:44:07.369+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:44:07.368+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:44:07.389+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.102 seconds
+[2024-05-08T13:44:37.559+0000] {processor.py:161} INFO - Started process (PID=9898) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:44:37.560+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:44:37.561+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:44:37.560+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:44:38.141+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:44:38.140+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:44:40.369+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:44:40.389+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:44:40.389+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:44:40.398+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:44:40.398+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:44:40.415+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.862 seconds
+[2024-05-08T13:45:10.651+0000] {processor.py:161} INFO - Started process (PID=9924) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:45:10.651+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:45:10.653+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:45:10.652+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:45:11.115+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:45:11.114+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:45:13.733+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:45:13.757+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:45:13.757+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:45:13.768+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:45:13.767+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:45:13.790+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.145 seconds
+[2024-05-08T13:45:44.035+0000] {processor.py:161} INFO - Started process (PID=9955) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:45:44.036+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:45:44.037+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:45:44.037+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:45:44.522+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:45:44.522+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:45:46.816+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:45:46.840+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:45:46.839+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:45:46.851+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:45:46.851+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:45:46.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.846 seconds
+[2024-05-08T13:46:17.232+0000] {processor.py:161} INFO - Started process (PID=9981) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:46:17.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:46:17.234+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:46:17.233+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:46:18.187+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:46:18.186+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:46:20.842+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:46:20.865+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:46:20.865+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:46:20.876+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:46:20.876+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:46:20.894+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.668 seconds
+[2024-05-08T13:46:51.115+0000] {processor.py:161} INFO - Started process (PID=10006) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:46:51.116+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:46:51.117+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:46:51.117+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:46:51.643+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:46:51.642+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:46:53.937+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:46:53.957+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:46:53.957+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:46:53.966+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:46:53.966+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:46:53.985+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.876 seconds
+[2024-05-08T13:47:24.300+0000] {processor.py:161} INFO - Started process (PID=10039) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:47:24.302+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:47:24.304+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:47:24.303+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:47:24.941+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:47:24.940+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:47:32.310+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:47:32.335+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:47:32.334+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:47:32.347+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:47:32.347+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:47:32.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 8.076 seconds
+[2024-05-08T13:48:02.513+0000] {processor.py:161} INFO - Started process (PID=10065) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:48:02.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:48:02.515+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:48:02.514+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:48:03.179+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:48:03.178+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:48:04.869+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:48:04.896+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:48:04.896+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:48:04.909+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:48:04.909+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:48:04.937+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.440 seconds
+[2024-05-08T13:48:35.125+0000] {processor.py:161} INFO - Started process (PID=10090) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:48:35.126+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:48:35.127+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:48:35.127+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:48:35.627+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:48:35.627+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:48:37.356+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:48:37.378+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:48:37.377+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:48:37.389+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:48:37.389+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:48:37.409+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.290 seconds
+[2024-05-08T13:49:07.588+0000] {processor.py:161} INFO - Started process (PID=10117) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:49:07.590+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:49:07.591+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:49:07.590+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:49:08.134+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:49:08.133+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:49:09.986+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:49:10.010+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:49:10.009+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:49:10.033+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:49:10.033+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:49:10.053+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.471 seconds
+[2024-05-08T13:49:40.234+0000] {processor.py:161} INFO - Started process (PID=10143) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:49:40.235+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:49:40.236+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:49:40.236+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:49:40.735+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:49:40.734+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:49:42.660+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:49:42.680+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:49:42.680+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:49:42.690+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:49:42.690+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:49:42.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.480 seconds
+[2024-05-08T13:50:12.923+0000] {processor.py:161} INFO - Started process (PID=10169) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:50:12.924+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:50:12.925+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:50:12.925+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:50:13.445+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:50:13.444+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:50:15.294+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:50:15.314+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:50:15.314+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:50:15.325+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:50:15.325+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:50:15.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.422 seconds
+[2024-05-08T13:50:45.528+0000] {processor.py:161} INFO - Started process (PID=10201) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:50:45.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:50:45.530+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:50:45.529+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:50:46.041+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:50:46.038+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:50:48.011+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:50:48.030+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:50:48.030+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:50:48.039+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:50:48.039+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:50:48.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.538 seconds
+[2024-05-08T13:51:18.264+0000] {processor.py:161} INFO - Started process (PID=10227) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:51:18.265+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:51:18.266+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:51:18.266+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:51:18.757+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:51:18.757+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:51:20.814+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:51:20.834+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:51:20.834+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:51:20.846+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:51:20.846+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:51:20.866+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.608 seconds
+[2024-05-08T13:51:50.966+0000] {processor.py:161} INFO - Started process (PID=10253) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:51:50.967+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:51:50.968+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:51:50.968+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:51:51.490+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:51:51.489+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:51:53.925+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:51:53.947+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:51:53.946+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:51:53.956+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:51:53.956+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:51:53.974+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.013 seconds
+[2024-05-08T13:52:24.284+0000] {processor.py:161} INFO - Started process (PID=10279) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:52:24.284+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:52:24.285+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:52:24.285+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:52:24.749+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:52:24.748+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:52:27.195+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:52:27.216+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:52:27.216+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:52:27.227+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:52:27.227+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:52:27.244+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.965 seconds
+[2024-05-08T13:52:57.475+0000] {processor.py:161} INFO - Started process (PID=10305) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:52:57.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:52:57.477+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:52:57.476+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:52:58.119+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:52:58.118+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:53:00.452+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:53:00.481+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:53:00.480+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:53:00.493+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:53:00.493+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:53:00.514+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.044 seconds
+[2024-05-08T13:53:30.669+0000] {processor.py:161} INFO - Started process (PID=10338) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:53:30.670+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:53:30.671+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:53:30.670+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:53:31.260+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:53:31.260+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:53:39.600+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:53:39.638+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:53:39.637+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:53:39.654+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:53:39.653+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:53:39.681+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 9.019 seconds
+[2024-05-08T13:54:09.990+0000] {processor.py:161} INFO - Started process (PID=10364) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:54:09.995+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:54:10.004+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:54:10.003+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:54:12.598+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:54:12.596+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:54:14.326+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:54:14.367+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:54:14.367+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:54:14.391+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:54:14.391+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:54:14.413+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 4.458 seconds
+[2024-05-08T13:54:44.610+0000] {processor.py:161} INFO - Started process (PID=10396) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:54:44.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:54:44.612+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:54:44.612+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:54:45.213+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:54:45.212+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:54:46.848+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:54:46.872+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:54:46.872+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:54:46.881+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:54:46.881+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:54:46.899+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.294 seconds
+[2024-05-08T13:55:17.097+0000] {processor.py:161} INFO - Started process (PID=10422) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:55:17.098+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:55:17.099+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:55:17.099+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:55:17.594+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:55:17.593+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:55:19.592+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:55:19.613+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:55:19.612+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:55:19.623+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:55:19.623+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:55:19.640+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.548 seconds
+[2024-05-08T13:55:49.833+0000] {processor.py:161} INFO - Started process (PID=10448) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:55:49.834+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:55:49.835+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:55:49.835+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:55:50.368+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:55:50.367+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:55:52.038+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:55:52.081+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:55:52.081+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:55:52.111+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:55:52.108+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:55:52.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.317 seconds
+[2024-05-08T13:56:22.359+0000] {processor.py:161} INFO - Started process (PID=10473) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:56:22.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:56:22.361+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:56:22.360+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:56:22.886+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:56:22.885+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:56:24.700+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:56:24.732+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:56:24.732+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:56:24.746+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:56:24.746+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:56:24.771+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.417 seconds
+[2024-05-08T13:56:54.980+0000] {processor.py:161} INFO - Started process (PID=10499) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:56:54.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:56:54.981+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:56:54.981+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:56:55.481+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:56:55.480+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:56:57.628+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:56:57.648+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:56:57.648+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:56:57.663+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:56:57.662+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:56:57.684+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.709 seconds
+[2024-05-08T13:57:27.802+0000] {processor.py:161} INFO - Started process (PID=10525) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:57:27.803+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:57:27.804+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:57:27.804+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:57:28.320+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:57:28.319+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:57:30.377+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:57:30.398+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:57:30.397+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:57:30.408+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:57:30.407+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:57:30.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.640 seconds
+[2024-05-08T13:58:00.641+0000] {processor.py:161} INFO - Started process (PID=10551) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:58:00.642+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:58:00.643+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:58:00.643+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:58:01.141+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:58:01.140+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:58:03.473+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:58:03.493+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:58:03.493+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:58:03.504+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:58:03.503+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:58:03.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.888 seconds
+[2024-05-08T13:58:33.755+0000] {processor.py:161} INFO - Started process (PID=10576) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:58:33.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:58:33.756+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:58:33.756+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:58:34.306+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:58:34.305+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:58:36.751+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:58:36.772+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:58:36.772+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:58:36.781+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:58:36.781+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:58:36.799+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.050 seconds
+[2024-05-08T13:59:06.979+0000] {processor.py:161} INFO - Started process (PID=10602) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:59:06.980+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:59:06.981+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:59:06.980+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:59:07.517+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:59:07.517+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:59:09.731+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:59:09.753+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:59:09.753+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:59:09.762+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:59:09.762+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:59:09.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.806 seconds
+[2024-05-08T13:59:35.308+0000] {processor.py:161} INFO - Started process (PID=10628) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:59:35.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T13:59:35.322+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:59:35.321+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:59:36.688+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:59:36.687+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T13:59:39.116+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T13:59:39.158+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:59:39.157+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T13:59:39.181+0000] {logging_mixin.py:188} INFO - [2024-05-08T13:59:39.180+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T13:59:39.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.951 seconds
+[2024-05-08T14:00:09.474+0000] {processor.py:161} INFO - Started process (PID=10665) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:00:09.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:00:09.477+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:00:09.477+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:00:10.313+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:00:10.312+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:00:17.480+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:00:17.518+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:00:17.518+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:00:17.544+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:00:17.544+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:00:17.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 8.108 seconds
+[2024-05-08T14:00:47.990+0000] {processor.py:161} INFO - Started process (PID=10695) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:00:47.996+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:00:47.999+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:00:47.998+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:00:49.867+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:00:49.866+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:00:52.774+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:00:52.857+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:00:52.857+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:00:52.893+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:00:52.893+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:00:52.933+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 4.961 seconds
+[2024-05-08T14:01:23.187+0000] {processor.py:161} INFO - Started process (PID=10721) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:01:23.188+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:01:23.189+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:01:23.189+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:01:23.727+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:01:23.727+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:01:26.267+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:01:26.288+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:01:26.288+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:01:26.300+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:01:26.299+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:01:26.317+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.135 seconds
+[2024-05-08T14:01:56.519+0000] {processor.py:161} INFO - Started process (PID=10747) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:01:56.519+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:01:56.520+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:01:56.520+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:01:56.996+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:01:56.995+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:01:59.376+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:01:59.395+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:01:59.394+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:01:59.403+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:01:59.403+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:01:59.423+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.910 seconds
+[2024-05-08T14:02:29.707+0000] {processor.py:161} INFO - Started process (PID=10773) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:02:29.707+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:02:29.708+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:02:29.708+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:02:30.161+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:02:30.161+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:02:32.553+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:02:32.573+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:02:32.572+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:02:32.583+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:02:32.582+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:02:32.603+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.902 seconds
+[2024-05-08T14:03:02.877+0000] {processor.py:161} INFO - Started process (PID=10799) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:03:02.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:03:02.879+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:03:02.878+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:03:03.377+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:03:03.376+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:03:05.913+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:03:05.932+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:03:05.932+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:03:05.943+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:03:05.943+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:03:05.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.089 seconds
+[2024-05-08T14:03:36.129+0000] {processor.py:161} INFO - Started process (PID=10825) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:03:36.130+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:03:36.131+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:03:36.130+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:03:36.597+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:03:36.597+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:03:40.416+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:03:40.436+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:03:40.436+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:03:40.445+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:03:40.445+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:03:40.464+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 4.340 seconds
+[2024-05-08T14:04:10.725+0000] {processor.py:161} INFO - Started process (PID=10850) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:04:10.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:04:10.727+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:04:10.727+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:04:11.188+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:04:11.188+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:04:13.643+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:04:13.661+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:04:13.661+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:04:13.670+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:04:13.670+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:04:13.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.969 seconds
+[2024-05-08T14:04:44.000+0000] {processor.py:161} INFO - Started process (PID=10876) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:04:44.001+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:04:44.002+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:04:44.002+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:04:44.495+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:04:44.494+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:04:46.861+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:04:46.883+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:04:46.882+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:04:46.893+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:04:46.892+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:04:46.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.916 seconds
+[2024-05-08T14:05:17.208+0000] {processor.py:161} INFO - Started process (PID=10908) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:05:17.209+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:05:17.210+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:05:17.210+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:05:17.707+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:05:17.706+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:05:20.094+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:05:20.115+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:05:20.115+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:05:20.126+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:05:20.126+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:05:20.145+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 2.942 seconds
+[2024-05-08T14:05:50.228+0000] {processor.py:161} INFO - Started process (PID=10934) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:05:50.229+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:05:50.230+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:05:50.230+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:05:50.697+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:05:50.697+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:05:53.223+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:05:53.243+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:05:53.243+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:05:53.253+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:05:53.253+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:05:53.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.047 seconds
+[2024-05-08T14:06:23.512+0000] {processor.py:161} INFO - Started process (PID=10960) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:06:23.513+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:06:23.514+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:06:23.513+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:06:23.978+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:06:23.978+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:06:26.467+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:06:26.487+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:06:26.487+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:06:26.499+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:06:26.498+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:06:26.521+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.013 seconds
+[2024-05-08T14:06:56.855+0000] {processor.py:161} INFO - Started process (PID=10986) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:06:56.855+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:06:56.856+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:06:56.856+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:06:57.292+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:06:57.291+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:06:59.867+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:06:59.887+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:06:59.887+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:06:59.897+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:06:59.897+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:06:59.915+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.065 seconds
+[2024-05-08T14:07:30.186+0000] {processor.py:161} INFO - Started process (PID=11012) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:07:30.187+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:07:30.188+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:07:30.188+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:07:30.662+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:07:30.662+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:07:33.276+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:07:33.296+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:07:33.296+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:07:33.306+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:07:33.305+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:07:33.323+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.143 seconds
+[2024-05-08T14:08:03.453+0000] {processor.py:161} INFO - Started process (PID=11039) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:08:03.453+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:08:03.454+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:08:03.454+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:08:03.917+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:08:03.917+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:08:06.366+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:08:06.407+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:08:06.407+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:08:06.427+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:08:06.427+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:08:06.473+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 3.026 seconds
+[2024-05-08T14:08:38.456+0000] {processor.py:161} INFO - Started process (PID=11066) to work on /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:08:38.478+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/fetchDataFromMongo.py for tasks to queue
+[2024-05-08T14:08:38.489+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:08:38.488+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:08:41.743+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:08:41.742+0000] {main.py:28} WARNING - Python-dotenv could not parse statement starting at line 5
+[2024-05-08T14:08:46.146+0000] {processor.py:840} INFO - DAG(s) 'ETL1' retrieved from /opt/airflow/dags/fetchDataFromMongo.py
+[2024-05-08T14:08:46.244+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:08:46.244+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-08T14:08:46.296+0000] {logging_mixin.py:188} INFO - [2024-05-08T14:08:46.295+0000] {dag.py:3954} INFO - Setting next_dagrun for ETL1 to None, run_after=None
+[2024-05-08T14:08:46.362+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/fetchDataFromMongo.py took 7.926 seconds

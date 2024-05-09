@@ -1,11 +1,11 @@
 from datetime import datetime, timedelta
-
+from threading import Thread
 from airflow.models import DAG
 from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from airflow.utils.task_group import TaskGroup
-# from transformation import initiate_data_transformation
 
+import datatransformation
 from utils.mongodbHelper import get_circle_data, get_sensor_data, get_process_sensor
 
 default_args = {
@@ -15,40 +15,51 @@ default_args = {
     'retry_delay': timedelta(seconds=120)
 }
 
+
+def process_sensor_wrapper(sensor_info, transformed_data):
+    sen_id = sensor_info['id']
+    site_id = sensor_info['site_id']
+    processed_data = get_process_sensor(sen_id)
+    if processed_data is None or len(processed_data) < 3000:
+        return []
+    else:
+        tdata = transformed_data.append(datatransformation.init_transformation(processed_data, site_id))
+        return tdata
+
+
+def fetch_and_transform_sensor_data(sensor_data):
+    threads = []
+    transformed_data = []
+    for sensor_info in sensor_data:
+        thread = Thread(target=process_sensor_wrapper, args=(sensor_info, transformed_data))
+        thread.start()
+        threads.append(thread)
+    for thread in threads:
+        thread.join()
+    return "success"
+
+
 with DAG(
         dag_id="ETL1",
         default_args=default_args,
         start_date=datetime(2024, 4, 11),
         schedule_interval=None,
-        max_active_runs=2000
+        max_active_runs=100
 ) as dag:
-    Start = EmptyOperator(task_id="START")
+    start = EmptyOperator(task_id="START")
+    end = EmptyOperator(task_id="END")
+
     circle_data = get_circle_data()
 
-    with TaskGroup('CircleDataFetching') as circleGrp:
+    with TaskGroup("ParallelSensorTasks") as parallel_group:
         for circle_id in circle_data:
-            circle_task = PythonOperator(
-                task_id=f"FetchingSensorID_{circle_id}",
-                python_callable=get_sensor_data,
-                op_args=[circle_id]
+            sensor_data = get_sensor_data(circle_id['id'])
+            fetch_sensor_task = PythonOperator(
+                task_id=f"FetchSensor_{circle_id['id']}",
+                python_callable=fetch_and_transform_sensor_data,
+                op_args=[sensor_data]
             )
+            fetch_sensor_task >> end
 
-            with TaskGroup(f'SensorsForCircle_{circle_id}') as sensorGrp:
-                sensor_data = get_sensor_data(circle_id)
-                for sensor_info in sensor_data:
-                    sensor_id = sensor_info['id']
-                    sensor_name = sensor_info['name']
-                    sensor_task = PythonOperator(
-                        task_id=f"ProcessSensor_{sensor_id}",
-                        python_callable=get_process_sensor,
-                        op_args=[circle_id, sensor_id]
-                    )
-                    circle_task >> sensor_task
-    # transformation = PythonOperator(
-    #     task_id=f"TransformationSensorID_{sensor_id}",
-    #     python_callable=initiate_data_transformation,
-    #     op_args=[circle_id, sensor_id]
-    # )
-    task5 = EmptyOperator(task_id="END")
+    start >> parallel_group
 
-    Start >> circleGrp >> task5
