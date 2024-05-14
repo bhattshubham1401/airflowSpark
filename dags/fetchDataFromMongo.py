@@ -4,6 +4,7 @@ from airflow.models import DAG
 from airflow.operators.empty import EmptyOperator
 from airflow.operators.python import PythonOperator
 from airflow.utils.task_group import TaskGroup
+import requests
 
 import datatransformation
 from utils.mongodbHelper import get_circle_data, get_sensor_data, get_process_sensor
@@ -16,10 +17,11 @@ default_args = {
 }
 
 
-def process_sensor_wrapper(sensor_info, transformed_data):
+def process_sensor_wrapper(sensor_info, transformed_data, circle_id):
     sen_id = sensor_info['id']
     site_id = sensor_info['site_id']
-    processed_data = get_process_sensor(sen_id)
+    circle_id = circle_id
+    processed_data = get_process_sensor(circle_id)
     if processed_data is None or len(processed_data) < 3000:
         return []
     else:
@@ -27,11 +29,14 @@ def process_sensor_wrapper(sensor_info, transformed_data):
         return tdata
 
 
-def fetch_and_transform_sensor_data(sensor_data):
+def fetch_and_transform_sensor_data(sensor_data, circle_id):
     threads = []
-    transformed_data = []
+    sensor_ids = list(map(lambda x: x["id"], sensor_data))
+    data = requests.get("http://127.0.0.1:5000/data",params={"sensor":sensor_ids})     
+    transformed_data = data.text
+    
     for sensor_info in sensor_data:
-        thread = Thread(target=process_sensor_wrapper, args=(sensor_info, transformed_data))
+        thread = Thread(target=process_sensor_wrapper, args=(sensor_info, transformed_data, circle_id))
         thread.start()
         threads.append(thread)
     for thread in threads:
@@ -57,7 +62,7 @@ with DAG(
             fetch_sensor_task = PythonOperator(
                 task_id=f"FetchSensor_{circle_id['id']}",
                 python_callable=fetch_and_transform_sensor_data,
-                op_args=[sensor_data]
+                op_args=[sensor_data, circle_id['id']]
             )
             fetch_sensor_task >> end
 
