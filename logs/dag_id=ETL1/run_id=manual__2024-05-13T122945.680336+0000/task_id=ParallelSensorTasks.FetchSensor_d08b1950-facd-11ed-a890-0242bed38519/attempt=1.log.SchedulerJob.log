@@ -1,0 +1,1 @@
+[2024-05-13T12:30:24.148+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: ETL1.ParallelSensorTasks.FetchSensor_d08b1950-facd-11ed-a890-0242bed38519 manual__2024-05-13T12:29:45.680336+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

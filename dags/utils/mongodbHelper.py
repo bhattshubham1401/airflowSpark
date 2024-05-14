@@ -3,6 +3,7 @@ import pandas as pd
 from dotenv import load_dotenv
 from pymongo import MongoClient
 
+
 load_dotenv()
 
 def get_connection():
@@ -40,7 +41,7 @@ def get_sensor_data(circle):
         collection_name = os.getenv("sensor")
         sensor = conn[collection_name]
         data = sensor.find({"circle_id": circle, "type": "AC_METER", "admin_status": {"$in": ['N', 'S', 'U']}, "utility": "2"},
-                           {"name": 1, "_id": 0, "id": 1, "meter_ct_mf": 1, "UOM": 1, "meter_MWh_mf": 1, "site_id": 1, "asset_id": 1}).limit(10)
+                           {"name": 1, "_id": 0, "id": 1, "meter_ct_mf": 1, "UOM": 1, "meter_MWh_mf": 1, "site_id": 1, "asset_id": 1}).limit(25)
         for item in data:
             dataList.append(item)
         return dataList
