@@ -21,7 +21,8 @@ def process_sensor_wrapper(sensor_info, transformed_data, circle_id):
     sen_id = sensor_info['id']
     site_id = sensor_info['site_id']
     circle_id = circle_id
-    processed_data = get_process_sensor(circle_id)
+    processed_data = transformed_data
+    # processed_data = get_process_sensor(circle_id)
     if processed_data is None or len(processed_data) < 3000:
         return []
     else:
@@ -32,7 +33,7 @@ def process_sensor_wrapper(sensor_info, transformed_data, circle_id):
 def fetch_and_transform_sensor_data(sensor_data, circle_id):
     threads = []
     sensor_ids = list(map(lambda x: x["id"], sensor_data))
-    data = requests.get("http://127.0.0.1:5000/data",params={"sensor":sensor_ids})     
+    data = requests.get("http://127.0.0.1:5000/data",params={"sensors":sensor_ids})     
     transformed_data = data.text
     
     for sensor_info in sensor_data:
