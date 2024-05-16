@@ -33,7 +33,7 @@ def process_sensor_wrapper(sensor_info, transformed_data, circle_id):
 def fetch_and_transform_sensor_data(sensor_data, circle_id):
     threads = []
     sensor_ids = list(map(lambda x: x["id"], sensor_data))
-    data = requests.get("http://127.0.0.1:5000/data",params={"sensors":sensor_ids})     
+    data = requests.get("http://127.0.0.1:5000/circle_id)",params={"sensors":sensor_ids})     
     transformed_data = data.text
     
     for sensor_info in sensor_data:
