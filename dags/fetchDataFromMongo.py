@@ -9,29 +9,29 @@ import datatransformation
 from utils.mongodbHelper import get_circle_data, get_sensor_data, get_process_sensor
 
 default_args = {
-    'owner': 'Shubham Bhatt',
+    'owner': 'Shubham Bhatt1232222',
     'start_date': datetime(2024, 4, 11),
     'retries': 3,
     'retry_delay': timedelta(seconds=120)
 }
 
 
-def process_sensor_wrapper(sensor_info, transformed_data):
+def process_sensor_wrapper(sensor_info, transformed_data, circle_id):
     sen_id = sensor_info['id']
     site_id = sensor_info['site_id']
     processed_data = get_process_sensor(sen_id)
     if processed_data is None or len(processed_data) < 3000:
         return []
     else:
-        tdata = transformed_data.append(datatransformation.init_transformation(processed_data, site_id))
+        tdata = transformed_data.append(datatransformation.init_transformation(processed_data, site_id, circle_id))
         return tdata
 
 
-def fetch_and_transform_sensor_data(sensor_data):
+def fetch_and_transform_sensor_data(sensor_data, circle_id):
     threads = []
     transformed_data = []
     for sensor_info in sensor_data:
-        thread = Thread(target=process_sensor_wrapper, args=(sensor_info, transformed_data))
+        thread = Thread(target=process_sensor_wrapper, args=(sensor_info, transformed_data, circle_id))
         thread.start()
         threads.append(thread)
     for thread in threads:
@@ -57,9 +57,8 @@ with DAG(
             fetch_sensor_task = PythonOperator(
                 task_id=f"FetchSensor_{circle_id['id']}",
                 python_callable=fetch_and_transform_sensor_data,
-                op_args=[sensor_data]
+                op_args=[sensor_data, circle_id['id']]
             )
             fetch_sensor_task >> end
 
     start >> parallel_group
-
