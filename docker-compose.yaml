@@ -81,6 +81,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
+    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/jobs/common/spark_common
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
@@ -90,6 +91,18 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+
+  # pyspark:
+  #   image: jupyter/pyspark-notebook:latest
+  #   container_name: pyspark_container
+  #   ports:
+  #     - "8888:8888"
+  #   environment:
+  #     - PYSPARK_DRIVER_PYTHON=jupyter
+  #     - PYSPARK_DRIVER_PYTHON_OPTS=notebook
+  #   volumes:
+  #     - ./notebooks:/home/jovyan/work
+  
   postgres:
     image: postgres:13
     environment:
@@ -288,3 +301,5 @@ services:
 
 volumes:
   postgres-db-volume:
+
+
