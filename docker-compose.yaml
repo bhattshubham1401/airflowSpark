@@ -57,7 +57,7 @@ x-airflow-common:
     AIRFLOW__CELERY__WORKER_CONCURRENCY: 8
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
-    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW__CELERY__BROKER_URL: amqp://defaultuser:defaultpassword@rabbitmq/
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__PARALLELISM: 64
     AIRFLOW__CORE__DAG_CONCURRENCY: 32
@@ -118,17 +118,20 @@ services:
       start_period: 5s
     restart: always
 
-  redis:
-    image: redis:latest
-    expose:
-      - 6379
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 30s
-      retries: 50
-      start_period: 30s
-    restart: always
+  rabbitmq:
+      image: docker.io/rabbitmq:3-management
+      container_name: some-rabbit
+      hostname: my-rabbit
+      ports:
+        - '8672:15672'
+        - '5672:5672'
+      volumes:
+        - 'rabbitmq_data:/var/lib/rabbitmq'
+      environment:
+        # ALLOW_EMPTY_PASSWORD is recommended only for development.
+        # - ALLOW_EMPTY_PASSWORD=yes
+        - RABBITMQ_DEFAULT_USER=defaultuser
+        - RABBITMQ_DEFAULT_PASS=defaultpassword
 
   airflow-webserver:
     <<: *airflow-common
