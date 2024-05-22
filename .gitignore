@@ -3,3 +3,4 @@
 /spark_env/
 /Feeders.Data.csv/
 /logs/
+/dags/__pycache__/
