@@ -109,16 +109,21 @@ services:
       start_period: 5s
     restart: always
 
-  rabbitmq:
-    image: rabbitmq:3-management
-    container_name: rabbitmq 
-    restart: always
-    ports:
-      - "15672:15672"  # Management UI
-      - "5672:5672"    # AMQP protocol port
-    environment:
-      - RABBITMQ_DEFAULT_USER=airflow
-      - RABBITMQ_DEFAULT_PASS=airflow
+rabbitmq:
+  image: rabbitmq:3-management
+  container_name: rabbitmq
+  restart: always
+  ports:
+    - "15672:15672"  # Management UI
+    - "5672:5672"    # AMQP protocol port
+  healthcheck:
+    test: ["CMD", "rabbitmqctl", "status"]  # Health check command
+    interval: 10s                         # Check every 10 seconds
+    timeout: 5s                          # Timeout after 5 seconds
+    retries: 5                           # Retry 5 times before failing
+  environment:
+    - RABBITMQ_DEFAULT_USER=airflow
+    - RABBITMQ_DEFAULT_PASS=airflow 
 
   airflow-webserver:
     <<: *airflow-common
