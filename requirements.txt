@@ -11,3 +11,9 @@ pyspark~=3.5.1
 requests
 pyyaml
 xgboost
+apache-airflow[celery] 
+pymongo 
+apache-airflow 
+holidays 
+pika 
+apache-airflow-providers-mongo==4.1.0

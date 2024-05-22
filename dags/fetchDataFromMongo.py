@@ -55,13 +55,14 @@ default_args = {
 
 
 def get_rabbitmq_connection():
-    credentials = pika.PlainCredentials('airflow', 'airflow')
+    
+    credentials = pika.PlainCredentials('admin', 'mypass')
     connection = pika.BlockingConnection(
         pika.ConnectionParameters(
             host='rabbitmq',  
             port=5672, 
             credentials=credentials,
-            virtual_host='airflow'
+            virtual_host='admin'
         )
     )
     return connection

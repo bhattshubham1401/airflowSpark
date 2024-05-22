@@ -46,18 +46,15 @@
 ---
 x-airflow-common:
   &airflow-common
-  # In order to add custom dependencies or upgrade provider packages you can use your extended image.
-  # Comment the image line, place your Dockerfile in the directory where you placed the docker-compose.yaml
-  # and uncomment the "build" line below, Then run `docker-compose build` to build the images.
   image: ${AIRFLOW_IMAGE_NAME:-extended_airflow:latest}
-  # build: .
   environment:
     &airflow-common-env
     AIRFLOW__CORE__EXECUTOR: CeleryExecutor
-    AIRFLOW__CELERY__WORKER_CONCURRENCY: 8
+    AIRFLOW__CELERY__WORKER_CONCURRENCY: 16
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
-    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW_CONN_RABBITMQ_DEFAULT: 'amqp://admin:mypass@rabbitmq:5672/admin'
+    AIRFLOW__CELERY__BROKER_URL: amqp://admin:mypass@rabbitmq:5672/
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__PARALLELISM: 64
     AIRFLOW__CORE__DAG_CONCURRENCY: 32
@@ -65,17 +62,8 @@ x-airflow-common:
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKENDS: 'airflow.api.auth.backend.basic_auth,airflow.api.auth.backend.session'
-    # yamllint disable rule:line-length
-    # Use simple http server on scheduler for health checks
-    # See https://airflow.apache.org/docs/apache-airflow/stable/administration-and-deployment/logging-monitoring/check-health.html#scheduler-health-check-server
-    # yamllint enable rule:line-length
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
-    # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
-    # for other purpose (development, test and especially production usage) build/extend Airflow image.
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow[celery] pymongo apache-airflow holidays pika apache-airflow-providers-mongo==4.1.0}
-    # The following line can be used to set a custom config file, stored in the local config folder
-    # If you want to use it, outcomment it and replace airflow.cfg with the name of your config file
-    # AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
   volumes:
     - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
@@ -84,7 +72,7 @@ x-airflow-common:
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
     &airflow-common-depends-on
-    redis:
+    rabbitmq:
       condition: service_healthy
     postgres:
       condition: service_healthy
@@ -105,12 +93,18 @@ services:
       start_period: 5s
     restart: always
 
-  redis:
-    image: redis:latest
-    expose:
-      - 6379
+  rabbitmq:
+    image: rabbitmq:3-management
+    environment:
+            - RABBITMQ_DEFAULT_USER=admin
+            - RABBITMQ_DEFAULT_PASS=mypass
+            - SERVICE_PORTS=5672
+            - TCP_PORTS=5672
+    ports:
+      - "15672:15672"  # Management UI
+      - "5672:5672"    # AMQP protocol port
     healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
+      test: ["CMD", "rabbitmqctl", "status"]
       interval: 10s
       timeout: 30s
       retries: 50
@@ -163,14 +157,20 @@ services:
       start_period: 30s
     environment:
       <<: *airflow-common-env
-      # Required to handle warm shutdown of the celery workers properly
-      # See https://airflow.apache.org/docs/docker-stack/entrypoint.html#signal-propagation
       DUMB_INIT_SETSID: "0"
+      AIRFLOW__CELERY__WORKER_PREFETCH_MULTIPLIER: 0      
     restart: always
     depends_on:
       <<: *airflow-common-depends-on
       airflow-init:
         condition: service_completed_successfully
+    deploy:
+      resources:
+        limits:
+          memory: 3G 
+  # ...
+
+      
 
   airflow-triggerer:
     <<: *airflow-common
