@@ -57,7 +57,7 @@ x-airflow-common:
     AIRFLOW__CELERY__WORKER_CONCURRENCY: 8
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
-    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+    AIRFLOW__CELERY__BROKER_URL: amqp://airflow:airflow@rabbitmq/ 
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__PARALLELISM: 64
     AIRFLOW__CORE__DAG_CONCURRENCY: 32
@@ -72,7 +72,7 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow[celery] pymongo apache-airflow holidaysapache-airflow-providers-mongo==4.1.0}
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow[celery] pymongo apache-airflow holidays apache-airflow-providers-mongo==4.1.0 apache-airflow-providers-rabbitmq pika}  # Add RabbitMQ provider
     # The following line can be used to set a custom config file, stored in the local config folder
     # If you want to use it, outcomment it and replace airflow.cfg with the name of your config file
     # AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
@@ -108,17 +108,16 @@ services:
       start_period: 5s
     restart: always
 
-  redis:
-    image: redis:latest
-    expose:
-      - 6379
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 30s
-      retries: 50
-      start_period: 30s
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq 
     restart: always
+    ports:
+      - "15672:15672"  # Management UI
+      - "5672:5672"    # AMQP protocol port
+    environment:
+      - RABBITMQ_DEFAULT_USER=airflow
+      - RABBITMQ_DEFAULT_PASS=airflow
 
   airflow-webserver:
     <<: *airflow-common
@@ -134,6 +133,8 @@ services:
     restart: always
     depends_on:
       <<: *airflow-common-depends-on
+      rabbitmq: 
+        condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
 
@@ -149,6 +150,8 @@ services:
     restart: always
     depends_on:
       <<: *airflow-common-depends-on
+      rabbitmq: 
+        condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
 
@@ -172,6 +175,8 @@ services:
     restart: always
     depends_on:
       <<: *airflow-common-depends-on
+      rabbitmq: 
+        condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
 
@@ -187,6 +192,8 @@ services:
     restart: always
     depends_on:
       <<: *airflow-common-depends-on
+      rabbitmq: 
+        condition: service_healthy
       airflow-init:
         condition: service_completed_successfully
 
