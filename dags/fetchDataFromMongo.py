@@ -67,22 +67,25 @@ def fetch_data_for_circle(circle_id):
         },
         {"id": 1, "_id": 0},
     )
-#yo
-    with ThreadPoolExecutor() as executor:
-        futures = [
-            executor.submit(
-                fetch_sensor_data, doc["id"])
-            for doc in sensor_info
-        ]
+    chunk_size = 10
+    all_sensor_data = []
 
-        for future in futures:
-            try:
-                sensor_info = future.result()
-                print(f"Fetched data for sensor: {len(sensor_info)}")
-                
-            except Exception as e:
-                print(f"Error fetching data for sensor: {e}")
-        return sensor_info
+    for i in range(0, len(sensor_info), chunk_size):
+        sensor_ids_chunk = sensor_info[i : i + chunk_size]
+        with ThreadPoolExecutor() as executor:
+            futures = [
+                executor.submit(fetch_sensor_data, sensor_id["id"])
+                for sensor_id in sensor_ids_chunk
+            ]
+
+            for future in futures:
+                try:
+                    sensor_data = future.result()
+                    all_sensor_data.extend(sensor_data)
+                    print(f"Fetched data for sensor: {len(sensor_data)}")
+                except Exception as e:
+                    print(f"Error fetching data for sensor: {e}")
+    return all_sensor_data
 
 
 

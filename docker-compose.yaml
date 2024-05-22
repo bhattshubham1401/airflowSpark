@@ -57,7 +57,7 @@ x-airflow-common:
     AIRFLOW__CELERY__WORKER_CONCURRENCY: 8
     AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
     AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
-    AIRFLOW__CELERY__BROKER_URL: amqp://defaultuser:defaultpassword@rabbitmq/
+    AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__PARALLELISM: 64
     AIRFLOW__CORE__DAG_CONCURRENCY: 32
@@ -72,7 +72,7 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow[celery] pymongo apache-airflow holidays apache-airflow-providers-mongo==4.1.0}
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow[celery] pymongo apache-airflow holidaysapache-airflow-providers-mongo==4.1.0}
     # The following line can be used to set a custom config file, stored in the local config folder
     # If you want to use it, outcomment it and replace airflow.cfg with the name of your config file
     # AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
@@ -92,16 +92,6 @@ x-airflow-common:
 
 services:
 
-  # pyspark:
-  #   image: jupyter/pyspark-notebook:latest
-  #   container_name: pyspark_container
-  #   ports:
-  #     - "8888:8888"
-  #   environment:
-  #     - PYSPARK_DRIVER_PYTHON=jupyter
-  #     - PYSPARK_DRIVER_PYTHON_OPTS=notebook
-  #   volumes:
-  #     - ./notebooks:/home/jovyan/work
   
   postgres:
     image: postgres:13
@@ -118,20 +108,17 @@ services:
       start_period: 5s
     restart: always
 
-  rabbitmq:
-      image: docker.io/rabbitmq:3-management
-      container_name: some-rabbit
-      hostname: my-rabbit
-      ports:
-        - '8672:15672'
-        - '5672:5672'
-      volumes:
-        - 'rabbitmq_data:/var/lib/rabbitmq'
-      environment:
-        # ALLOW_EMPTY_PASSWORD is recommended only for development.
-        # - ALLOW_EMPTY_PASSWORD=yes
-        - RABBITMQ_DEFAULT_USER=defaultuser
-        - RABBITMQ_DEFAULT_PASS=defaultpassword
+  redis:
+    image: redis:latest
+    expose:
+      - 6379
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 30s
+      retries: 50
+      start_period: 30s
+    restart: always
 
   airflow-webserver:
     <<: *airflow-common
@@ -306,3 +293,14 @@ volumes:
   postgres-db-volume:
 
 
+
+  # pyspark:
+  #   image: jupyter/pyspark-notebook:latest
+  #   container_name: pyspark_container
+  #   ports:
+  #     - "8888:8888"
+  #   environment:
+  #     - PYSPARK_DRIVER_PYTHON=jupyter
+  #     - PYSPARK_DRIVER_PYTHON_OPTS=notebook
+  #   volumes:
+  #     - ./notebooks:/home/jovyan/work
