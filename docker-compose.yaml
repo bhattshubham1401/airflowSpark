@@ -121,7 +121,7 @@ rabbitmq:
     interval: 10s                         
     timeout: 5s                          
     retries: 5   
-  environment:  # Correct spelling and indentation
+  environment: 
     - RABBITMQ_DEFAULT_USER=airflow
     - RABBITMQ_DEFAULT_PASS=airflow 
 
