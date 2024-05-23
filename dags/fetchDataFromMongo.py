@@ -67,30 +67,79 @@ def get_rabbitmq_connection():
     )
     return connection
 
-def publish_to_rabbitmq(sensor_id, site_id):
-    connection = get_rabbitmq_connection()
-    channel = connection.channel()
-    channel.queue_declare(queue='sensor_data_queue', durable=True)
-
-    message = json.dumps({"sensor_id": sensor_id, "site_id": site_id},default=json_util.default) 
-    channel.basic_publish(
-        exchange='',
-        routing_key='sensor_data_queue',
-        body=message,
-        properties=pika.BasicProperties(delivery_mode=2)  # Make message persistent
-    )
-
-    connection.close()
-
 def get_circle_ids():
     return [doc["id"] for doc in db.circle.find({}, {"_id": 0, "id": 1})]
 
-def fetch_and_transform_sensor_data(circle_id, **kwargs):
+def publish_sensor_data_to_rabbitmq(sensor_id, site_id, results):
     connection = get_rabbitmq_connection()
     channel = connection.channel()
     channel.queue_declare(queue='sensor_data_queue', durable=True)
 
-    transformed_data_list = []
+    for doc in results:
+        message = json.dumps({"sensor_id": sensor_id, "site_id": site_id, "data": doc}, default=json_util.default)
+        channel.basic_publish(
+            exchange='',
+            routing_key='sensor_data_queue',
+            body=message,
+            properties=pika.BasicProperties(delivery_mode=2)
+        )
+    connection.close()
+
+
+def fetch_sensor_data_from_rabbitmq(**kwargs):
+    connection = get_rabbitmq_connection()
+    channel = connection.channel()
+    channel.queue_declare(queue='sensor_data_queue', durable=True)
+
+    fetched_data_list = []
+
+    def callback(ch, method, properties, body):
+        try:
+            message = json.loads(body.decode(), object_hook=json_util.object_hook)
+            fetched_data_list.append(message)
+            ch.basic_ack(delivery_tag=method.delivery_tag)
+        except Exception as e:
+            print(f"Error processing message: {e}")
+
+    while True:
+        method_frame, header_frame, body = channel.basic_get(queue='sensor_data_queue')
+        if not method_frame:
+            break
+        callback(channel, method_frame, header_frame, body)
+
+    connection.close()
+    return fetched_data_list
+
+def fetch_data_for_circle(circle_id):
+    sensor_info = db.jdvvnlSensor.find(
+        {
+            "circle_id": circle_id,
+            "type": "AC_METER",
+            "admin_status": {"$in": ["N", "S", "U"]},
+            "utility": "2",
+        },
+        {"id": 1, "_id": 0 , "site_id": 1},
+    )
+
+    for sensor in sensor_info:
+        sensor_id = sensor['id']
+        site_id = sensor['site_id']
+        from_id = sensor_id + "-2024-01-01 00:00:00"
+        to_id = sensor_id + "-2024-03-31 23:59:59"
+
+        results = list(
+            db.load_profile_jdvvnl.find({"_id": {"$gte": from_id, "$lt": to_id}})
+        )
+        for doc in results:
+            doc["_id"] = str(doc["_id"])
+
+        publish_sensor_data_to_rabbitmq(sensor_id, site_id, results) 
+
+    connection = get_rabbitmq_connection()
+    channel = connection.channel()
+    channel.queue_declare(queue='sensor_data_queue', durable=True)
+
+    # transformed_data_list = []
 
     def callback(ch, method, properties, body):
         try:
@@ -98,7 +147,6 @@ def fetch_and_transform_sensor_data(circle_id, **kwargs):
             sensor_id = message['sensor_id']
             site_id = message['site_id']
 
-            # Ensure the sensor belongs to the current circle_id
             sensor_circle_id = db.jdvvnlSensor.find_one({"id": sensor_id}, {"circle_id": 1})
             if sensor_circle_id and sensor_circle_id['circle_id'] == circle_id:
                 from_id = sensor_id + "-2024-01-01 00:00:00"
@@ -108,29 +156,27 @@ def fetch_and_transform_sensor_data(circle_id, **kwargs):
                 )
 
                 for doc in results:
-                    doc["_id"] = str(doc["_id"])  # Convert ObjectId to string
+                    doc["_id"] = str(doc["_id"])
 
-                transformed_data = datatransformation.init_transformation(results, site_id)
-                transformed_data_list.extend(transformed_data)
+                # transformed_data = datatransformation.init_transformation(results, site_id)
+                # transformed_data_list.extend(transformed_data)
 
-            ch.basic_ack(delivery_tag=method.delivery_tag)  # Acknowledge message
+            ch.basic_ack(delivery_tag=method.delivery_tag)
+            return results
         
         except Exception as e:
             print(f"Error processing message for sensor_id {sensor_id}: {e}")
-            # Handle the error (e.g., log, retry, send to error queue)
 
-
-    # Start consuming messages (use basic_consume for your custom loop)
     channel.basic_consume(queue='sensor_data_queue', on_message_callback=callback)
 
     try:
-        channel.start_consuming()  # This will block until you stop it
-    except KeyboardInterrupt:  # Allow graceful shutdown with Ctrl+C
+        channel.start_consuming()  
+    except KeyboardInterrupt:  
         channel.stop_consuming()
     finally:
         connection.close()
 
-    return transformed_data_list
+    return results
 
 
 with DAG(dag_id="ETL1", default_args=default_args) as dag:
@@ -141,7 +187,7 @@ with DAG(dag_id="ETL1", default_args=default_args) as dag:
     for circle_id in circle_data:
         task = PythonOperator(
             task_id=f"fetch_and_transform_{circle_id}",
-            python_callable=fetch_and_transform_sensor_data,
+            python_callable=fetch_data_for_circle,
             op_kwargs={"circle_id": circle_id},
         )
         transformed_data_tasks.append(task)

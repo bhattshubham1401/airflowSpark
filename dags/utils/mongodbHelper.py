@@ -4,28 +4,30 @@ from dotenv import load_dotenv
 from pymongo import MongoClient
 
 load_dotenv()
+client = MongoClient("mongodb://13.127.57.185:27017/")
+db = client.pvvnl
 
-def get_connection():
-    try:
-        max_pool_size = 4000
-        db = os.getenv("db")
-        host = os.getenv("host")
-        port = os.getenv("port")
-        mongo_url = f"mongodb://{host}:{port}"
-        client = MongoClient(mongo_url, maxPoolSize=max_pool_size)
-        db1 = client[db]
-        return db1
+# def get_connection():
+#     try:
+#         max_pool_size = 4000
+#         db = os.getenv("db")
+#         host = os.getenv("host")
+#         port = os.getenv("port")
+#         mongo_url = f"mongodb://{host}:{port}"
+#         client = MongoClient(mongo_url, maxPoolSize=max_pool_size)
+#         db1 = client[db]
+#         return db1
 
-    except Exception as e:
-        print("Error in Mongo Helper", e)
+#     except Exception as e:
+#         print("Error in Mongo Helper", e)
 
 
 def get_circle_data():
     try:
         dataList = []
-        conn = get_connection()
-        collection_name = os.getenv("circle")
-        circle = conn[collection_name]
+        # conn = get_connection()
+        # collection_name = os.getenv("circle")
+        circle = db.circle
         data = circle.find({"utility": "2"},{"id":1,"name":1})
         dataList.extend(data)
         return dataList
@@ -36,9 +38,9 @@ def get_circle_data():
 def get_sensor_data(circle):
     try:
         dataList = []
-        conn = get_connection()
-        collection_name = os.getenv("sensor")
-        sensor = conn[collection_name]
+        # conn = get_connection()
+        # collection_name = os.getenv("sensor")
+        sensor = db.jdvvnlSensor
         data = sensor.find({"circle_id": circle, "type": "AC_METER", "admin_status": {"$in": ['N', 'S', 'U']}, "utility": "2"},
                            {"name": 1, "_id": 0, "id": 1, "meter_ct_mf": 1, "UOM": 1, "meter_MWh_mf": 1, "site_id": 1, "asset_id": 1}).limit(12)
         for item in data:
@@ -51,9 +53,9 @@ def get_sensor_data(circle):
 def get_process_sensor(sensorId):
     try:
         dataList = []
-        conn = get_connection()
-        collection_name = os.getenv("loadProfileData")
-        loadProfile = conn[collection_name]
+        # conn = get_connection()
+        # collection_name = os.getenv("loadProfileData")
+        loadProfile = db.load_profile_jdvvnl
         fromId = sensorId + "-2024-01-01 00:00:00"
         toId = sensorId + "-2024-03-31 23:59:59"
         data = loadProfile.find({"_id": {"$gte": fromId, "$lte": toId}})
@@ -68,9 +70,9 @@ def get_process_sensor(sensorId):
 def get_process_sensorV1(sensorId):
     try:
         dataList = []
-        conn = get_connection()
-        collection_name = os.getenv("loadProfileData")
-        loadProfile = conn[collection_name]
+        # conn = get_connection()
+        # collection_name = os.getenv("loadProfileData")
+        loadProfile = db.load_profile_jdvvnl
         fromId = sensorId + "-2024-01-01 00:00:00"
         toId = sensorId + "-2024-03-31 23:59:59"
         data = loadProfile.find({"_id": {"$gte": fromId, "$lte": toId}})
@@ -90,9 +92,9 @@ def data_from_weather_api(site, startDate, endDate):
     try:
         start_date = startDate.strftime('%Y-%m-%d %H:%M:%S')
         end_date = endDate.strftime('%Y-%m-%d %H:%M:%S')
-        conn = get_connection()
-        collection_name = os.getenv("weatherData")
-        loadProfile = conn[collection_name]
+        # conn = get_connection()
+        # collection_name = os.getenv("weatherData")
+        loadProfile = db.weather_data
 
         documents = []
         query = loadProfile.find({
@@ -114,9 +116,9 @@ def data_from_weather_api(site, startDate, endDate):
         print("Error:", e)
 
 def load_data(data, circle_id):
-    conn = get_connection()
-    collection_name = os.getenv("transformed_dataV1")
-    t_data = conn[collection_name]
+    # conn = get_connection()
+    # collection_name = os.getenv("transformed_dataV1")
+    t_data = db.transformed_dataV1
 
     for items in data:
         site_id = items["site_id"]
