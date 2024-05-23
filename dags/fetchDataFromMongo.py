@@ -160,6 +160,9 @@ def fetch_data_for_circle(circle_id):
 
                 # transformed_data = datatransformation.init_transformation(results, site_id)
                 # transformed_data_list.extend(transformed_data)
+                print(f"sensor_id {len(sensor_id)} for circle_id {circle_id}")
+            else:
+                print(f"Skipping sensor_id {len(sensor_id)} for circle_id {circle_id}")
 
             ch.basic_ack(delivery_tag=method.delivery_tag)
             return results
