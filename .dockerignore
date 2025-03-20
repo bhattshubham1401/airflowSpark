@@ -4,3 +4,4 @@ __pycache__
 .git
 *.pyc
 logs
+spark_env
