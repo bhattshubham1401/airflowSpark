@@ -7,7 +7,7 @@ import pandas as pd
 from utils.mongodbHelper import data_from_weather_api, load_data
 
 
-def init_transformation(sensor_data, site_id, precomputed_holidays=None, start_date=None, end_date=None):
+def init_transformation(sensor_data, site_id, circle_id, precomputed_holidays=None, start_date=None, end_date=None):
     df = pd.DataFrame(sensor_data)
     if start_date is None or end_date is None:
         # Set default values
@@ -83,7 +83,7 @@ def init_transformation(sensor_data, site_id, precomputed_holidays=None, start_d
                          'closing_lagging_value', 'no_e', 'no_p', 'no_o',
                          'prev_KWh'], inplace=True)
             mongo_dict = merged_df.to_dict(orient='records')
-            load_data(mongo_dict)
+            load_data(mongo_dict, circle_id)
             return "success"
 
     except Exception as e:

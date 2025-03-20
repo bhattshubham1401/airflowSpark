@@ -148,7 +148,7 @@ def load_data(data, circle_id):
             'dayofweek': items.get("dayofweek", 0.0),
             'quarter': items.get("quarter", 0.0),
             'dayofyear': items.get("dayofyear", 0.0),
-            'weekofyear': items.get("weekofyear", 0.0),
+            'weekofyear': items.get("weeko`     fyear", 0.0),
             'year': items.get("year", 0.0)
         }
         document = {

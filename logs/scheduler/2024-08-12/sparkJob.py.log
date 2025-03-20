@@ -1,0 +1,5 @@
+[2024-08-12T05:53:30.080+0000] {processor.py:161} INFO - Started process (PID=31) to work on /opt/airflow/dags/sparkJob.py
+[2024-08-12T05:53:30.083+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/sparkJob.py for tasks to queue
+[2024-08-12T05:53:30.086+0000] {logging_mixin.py:188} INFO - [2024-08-12T05:53:30.086+0000] {dagbag.py:540} INFO - Filling up the DagBag from /opt/airflow/dags/sparkJob.py
+[2024-08-12T05:53:30.096+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/sparkJob.py
+[2024-08-12T05:53:30.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/sparkJob.py took 0.119 seconds
