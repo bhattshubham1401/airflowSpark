@@ -1,12 +1,12 @@
 from datetime import datetime, timedelta
 from airflow.models import DAG
 from airflow.operators.python import PythonOperator
-# from pymongo.mongo_client import MongoClient
+from pymongo.mongo_client import MongoClient
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # MongoDB Connection
-# client = MongoClient("mongodb://35.154.221.2:27017/", maxPoolSize=50)
-# db = client.jpdcl
+client = MongoClient("mongodb://35.154.221.2:27017/", maxPoolSize=50)
+db = client.jpdcl
 
 # Default Args
 default_args = {
