@@ -5,7 +5,7 @@ from pymongo.mongo_client import MongoClient
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # MongoDB Connection
-client = MongoClient("mongodb://13.127.57.185:27017/", maxPoolSize=50)
+client = MongoClient("mongodb://35.154.221.2:27017/", maxPoolSize=50)
 db = client.jpdcl
 
 # Default Args
