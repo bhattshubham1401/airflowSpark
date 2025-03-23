@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # MongoDB Connection
 client = MongoClient("mongodb://13.127.57.185:27017/", maxPoolSize=50)
-db = client.pvvnl
+db = client.jpdcl
 
 # Default Args
 default_args = {
