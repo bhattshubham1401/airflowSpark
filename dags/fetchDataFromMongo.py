@@ -29,7 +29,8 @@ default_args = {
 #     # Placeholder function to process each record
 #     print(f"Processing data for sensor: {doc['_id']}")
 #
-# def fetch_all_sensors():
+def fetch_all_sensors():
+    return "hello"
 #     sensor_info = db.sensor.find({}, {"id": 1, "_id": 0})
 #     with ThreadPoolExecutor(max_workers=10) as executor:
 #         futures = {executor.submit(fetch_sensor_data, doc["id"]): doc["id"] for doc in sensor_info}
@@ -40,15 +41,15 @@ default_args = {
 #             except Exception as e:
 #                 print(f"Error fetching data for sensor {futures[future]}: {e}")
 #
-# with DAG(
-#         dag_id="ETL1",
-#         default_args=default_args,
-#         schedule_interval=None,
-#         max_active_runs=100
-# ) as dag:
-#     fetch_sensors_task = PythonOperator(
-#         task_id="fetch_all_sensors",
-#         python_callable=fetch_all_sensors,
-#     )
+with DAG(
+        dag_id="ETL1",
+        default_args=default_args,
+        schedule_interval=None,
+        max_active_runs=100
+) as dag:
+    fetch_sensors_task = PythonOperator(
+        task_id="fetch_all_sensors",
+        python_callable=fetch_all_sensors,
+    )
 #
-#     fetch_sensors_task
+    fetch_sensors_task
