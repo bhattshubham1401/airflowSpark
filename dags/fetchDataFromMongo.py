@@ -16,31 +16,31 @@ default_args = {
     'retry_delay': timedelta(seconds=120)
 }
 
-# def fetch_sensor_data(sensor_id):
-#     from_id = sensor_id + ":2024-07-02 00:00:00"
-#     to_id = sensor_id + ":2025-03-18 23:59:59"
-#     cursor = db.loadprofile.find({"_id": {"$gte": from_id, "$lt": to_id}}, no_cursor_timeout=True)
-#     for doc in cursor:
-#         doc['_id'] = str(doc['_id'])
-#         process_sensor_data(doc)  # Process each document immediately to avoid memory spikes
-#     cursor.close()
-#
-# def process_sensor_data(doc):
-#     # Placeholder function to process each record
-#     print(f"Processing data for sensor: {doc['_id']}")
-#
+def fetch_sensor_data(sensor_id):
+    from_id = sensor_id + ":2024-07-02 00:00:00"
+    to_id = sensor_id + ":2025-03-18 23:59:59"
+    cursor = db.loadprofile.find({"_id": {"$gte": from_id, "$lt": to_id}}, no_cursor_timeout=True)
+    for doc in cursor:
+        doc['_id'] = str(doc['_id'])
+        process_sensor_data(doc)  # Process each document immediately to avoid memory spikes
+    cursor.close()
+
+def process_sensor_data(doc):
+    # Placeholder function to process each record
+    print(f"Processing data for sensor: {doc['_id']}")
+
 def fetch_all_sensors():
-    return "hello"
-#     sensor_info = db.sensor.find({}, {"id": 1, "_id": 0})
-#     with ThreadPoolExecutor(max_workers=10) as executor:
-#         futures = {executor.submit(fetch_sensor_data, doc["id"]): doc["id"] for doc in sensor_info}
-#         for future in as_completed(futures):
-#             try:
-#                 future.result()
-#                 print(f"Fetched data for sensor: {futures[future]}")
-#             except Exception as e:
-#                 print(f"Error fetching data for sensor {futures[future]}: {e}")
-#
+    # return "hello"
+    sensor_info = db.sensor.find({}, {"id": 1, "_id": 0})
+    with ThreadPoolExecutor(max_workers=10) as executor:
+        futures = {executor.submit(fetch_sensor_data, doc["id"]): doc["id"] for doc in sensor_info}
+        for future in as_completed(futures):
+            try:
+                future.result()
+                print(f"Fetched data for sensor: {futures[future]}")
+            except Exception as e:
+                print(f"Error fetching data for sensor {futures[future]}: {e}")
+
 with DAG(
         dag_id="ETL1",
         default_args=default_args,
