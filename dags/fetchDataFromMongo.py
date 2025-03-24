@@ -32,6 +32,8 @@ def process_sensor_data(doc):
 def fetch_all_sensors():
     # return "hello"
     sensor_info = db.sensor.find({}, {"id": 1, "_id": 0})
+    print(sensor_info)
+    return
     with ThreadPoolExecutor(max_workers=10) as executor:
         futures = {executor.submit(fetch_sensor_data, doc["id"]): doc["id"] for doc in sensor_info}
         for future in as_completed(futures):
