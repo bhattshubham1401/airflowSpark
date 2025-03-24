@@ -42,7 +42,7 @@ def fetch_all_sensors():
                 print(f"Error fetching data for sensor {futures[future]}: {e}")
 
 with DAG(
-        dag_id="ETL1",
+        dag_id="ETL",
         default_args=default_args,
         schedule_interval=None,
         max_active_runs=100
